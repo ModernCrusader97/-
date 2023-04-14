@@ -13,5 +13,6 @@ public:
 	virtual int	 Late_Update(void) override;
 	virtual void Render(HDC hDC) override;
 	virtual void Release(void) override;
+	int m_iMoveforward;
 };
 

@@ -31,7 +31,12 @@ void CMainGame::Initialize(void)
 		m_pPlayer = new CPlayer;
 		m_pPlayer->Initialize();
 	}*/
-
+	if (!m_pMonster)
+	{
+		m_pMonster = new CMonster;
+		m_pMonster->Initialize();
+		m_pMonster->Set_Target(m_pPlayer);
+	}
 	m_cMouse = new CMouse;
 	m_cMouse->Initialize();
 }
@@ -39,6 +44,13 @@ void CMainGame::Initialize(void)
 void CMainGame::Update(void)
 {
 	//m_pPlayer->Update();
+	if (m_pMonster)
+	{
+		if (m_pMonster->Update() == 1)
+		{
+			Safe_Delete<CObj*>(m_pMonster);
+		}
+	}
 	CManagers::instance().Scene()->Update_Scene();
 	m_cMouse->Update();
 }
@@ -46,6 +58,7 @@ void CMainGame::Update(void)
 void CMainGame::Late_Update()
 {
 	CManagers::instance().Scene()->Late_Update_Scene();
+
 }
 
 void CMainGame::Render()
@@ -53,7 +66,9 @@ void CMainGame::Render()
 	Rectangle(m_DC, 0, 0, WINCX, WINCY);
 
 	CManagers::instance().Scene()->Render_Scene(m_DC);
-
+	if (m_pMonster) {
+		m_pMonster->Render(m_DC);
+	}
 	//m_pPlayer->Render(m_DC);
 
 	m_cMouse->Render(m_DC);
