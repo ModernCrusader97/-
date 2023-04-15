@@ -1,16 +1,19 @@
-﻿빌드 시작: 2023-04-15 오전 7:45:50
-     1>2 노드의 "C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\DefaultWindow\DefaultWindow.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2023-04-15 오후 4:57:36
+     1>2 노드의 "C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\DefaultWindow\DefaultWindow.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\DefaultWindow.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Monster.cpp
-         Monster.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\DefaultWindow.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt BossMonster.cpp
+         BossMonster.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Debug\DefaultWindow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Debug\DefaultWindow.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Debug\DefaultWindow.lib" /MACHINE:X86 Debug\DefaultWindow.res
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\Debug\DefaultWindow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\Debug\DefaultWindow.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\Debug\DefaultWindow.lib" /MACHINE:X86 Debug\DefaultWindow.res
          Debug\BaseScene.obj
+         Debug\BossMonster.obj
          Debug\Bullet.obj
          Debug\CollisionManager.obj
          Debug\DefaultWindow.obj
+         Debug\EliteMonster.obj
          Debug\GameManager.obj
          Debug\Item.obj
+         Debug\Laser.obj
          Debug\MainGame.obj
          Debug\Managers.obj
          Debug\Monster.obj
@@ -23,9 +26,10 @@
          Debug\StageScene3.obj
          Debug\StageScene4.obj
          Debug\stdafx.obj
-         DefaultWindow.vcxproj -> C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Debug\DefaultWindow.exe
-     1>"C:\Users\이종석\Downloads\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\Jusin_TeamAssignment_1\DefaultWindow\DefaultWindow.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         LINK : C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\Debug\DefaultWindow.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+         DefaultWindow.vcxproj -> C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\Debug\DefaultWindow.exe
+     1>"C:\Users\이종석\Desktop\종없종깃\Jusin_TeamAssignment_1\DefaultWindow\DefaultWindow.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.75
+경과 시간: 00:00:01.05
