@@ -2,7 +2,7 @@
 #include "BaseScene.h"
 #include "Player.h"
 #include "Managers.h"
-
+#include "Monster.h"
 CBaseScene::CBaseScene()
 {
 }
@@ -25,6 +25,10 @@ void CBaseScene::Initialize()
 	CObj* cPlayer = new CPlayer();
 	cPlayer->Initialize();
 	m_ObjectList[static_cast<int>(TYPE_OBJ::TYPE_PLAYER)].push_back(cPlayer);
+	
+		CObj* pMonster = new CMonster;
+		pMonster->Set_Target(cPlayer);
+
 }
 
 void CBaseScene::Update()

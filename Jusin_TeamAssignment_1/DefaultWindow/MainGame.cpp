@@ -31,12 +31,7 @@ void CMainGame::Initialize(void)
 		m_pPlayer = new CPlayer;
 		m_pPlayer->Initialize();
 	}*/
-	if (!m_pMonster)
-	{
-		m_pMonster = new CMonster;
-		m_pMonster->Initialize();
-		m_pMonster->Set_Target(m_pPlayer);
-	}
+
 	m_cMouse = new CMouse;
 	m_cMouse->Initialize();
 }
