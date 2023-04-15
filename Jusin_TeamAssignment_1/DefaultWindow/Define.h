@@ -30,7 +30,8 @@ typedef enum class Obj_Type
 	TYPE_MONSTER	= 1,
 	TYPE_BULLET		= 2,
 	TYPE_ITEM		= 3,
-	TYPE_END		= 4,
+	TYPE_ENEMYBULLET	=4,
+	TYPE_END			= 5,
 
 }TYPE_OBJ;
 
